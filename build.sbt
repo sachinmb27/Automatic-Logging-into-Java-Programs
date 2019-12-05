@@ -13,3 +13,7 @@ libraryDependencies += "org.eclipse.jdt" % "org.eclipse.jdt.annotation" % "2.2.3
 // https://mvnrepository.com/artifact/commons-io/commons-io
 libraryDependencies += "commons-io" % "commons-io" % "2.6"
 
+// https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+libraryDependencies += "org.slf4j" % "slf4j-api" % "2.0.0-alpha1"
+
+

@@ -1,7 +1,7 @@
 import java.io.File
 import java.util.Scanner
-
 import org.eclipse.jdt.core.dom.{AST, ASTParser, ASTVisitor, CompilationUnit, MethodDeclaration, SimpleName, VariableDeclarationFragment}
+import org.slf4j._
 
 object test1 extends App {
     var theString = ""
@@ -22,16 +22,14 @@ object test1 extends App {
         override def visit(node: VariableDeclarationFragment): Boolean = {
             val name: SimpleName = node.getName
             val lineNumber = result.getLineNumber(name.getStartPosition)
-
             println("Name: " + name.toString)
-            println("Line: " + lineNumber)
-            println("------------------------")
+            //println("Line: " + lineNumber)
             false
         }
 
-        override def visit(node: MethodDeclaration): Boolean = {
-            
-            false
+        override def endVisit(node: MethodDeclaration): Unit = {
+            val method: String = node.getName.getFullyQualifiedName
+            println("Method name: " + method)
         }
     })
 }

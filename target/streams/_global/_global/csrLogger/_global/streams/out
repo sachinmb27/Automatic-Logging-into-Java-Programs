@@ -1,4 +1,5 @@
-[debug] downloaded https://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom
-[debug] downloaded https://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar
-[debug] downloaded https://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6-javadoc.jar
-[debug] downloaded https://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/slf4j/slf4j-parent/2.0.0-alpha1/slf4j-parent-2.0.0-alpha1.pom
+[debug] downloaded https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1-javadoc.jar
