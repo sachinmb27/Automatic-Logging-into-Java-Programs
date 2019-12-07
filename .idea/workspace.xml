@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="140038e9-d330-4b22-92ab-278d860bf636" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/sachinmb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/sachinmb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/AddTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/template.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/test1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/test1.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/AddTwoNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/AddTwoNumbers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/test1$$anon$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/test1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/test1$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/test1$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/test1$delayedInit$body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/test1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +57,13 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunManager" selected="Application.test1">
+    <configuration name="template" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="template" />
+      <module name="project_cs474" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="test" />
       <module name="project_cs474" />
@@ -74,6 +81,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.test1" />
+        <item itemvalue="Application.template" />
         <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
@@ -133,34 +141,66 @@
       <option name="presentableId" value="Default" />
       <updated>1575420223571</updated>
       <workItem from="1575420226810" duration="288000" />
-      <workItem from="1575420527180" duration="34396000" />
+      <workItem from="1575420527180" duration="42777000" />
     </task>
+    <task id="LOCAL-00001" summary="parser file">
+      <created>1575683021033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575683021033</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="parser file" />
+    <option name="LAST_COMMIT_MESSAGE" value="parser file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="408" y="185" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575420513358">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="408" y="185" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1575420513358" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1575682862642">
+    <state x="314" y="52" key="CommitChangelistDialog2" timestamp="1575683020785">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575682862642" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1575682862641">
+    <state x="314" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1575683020785" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom" timestamp="1575692253027">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575682862641" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1575682862640">
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575692253027" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center" timestamp="1575692253026">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575682862640" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1575682862641">
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575692253026" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left" timestamp="1575692253025">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575682862641" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575692253025" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right" timestamp="1575692253026">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575692253026" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1575692253028">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575692253028" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1575692253027">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1575692253027" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1575692253027">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1575692253027" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1575692253028">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1575692253028" />
     <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575682981942">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

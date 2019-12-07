@@ -5,8 +5,9 @@ import java.util.Scanner
 import scala.util.control._
 import org.eclipse.jdt.core.dom.rewrite.{ASTRewrite, ListRewrite}
 import org.eclipse.jdt.core.dom.{AST, ASTNode, ASTParser, ASTVisitor, AssertStatement, Assignment, Block, CompilationUnit, ExpressionStatement, ForStatement, IfStatement, MethodDeclaration, MethodInvocation, ReturnStatement, SimpleName, Statement, SwitchStatement, TextElement, TypeDeclaration, VariableDeclarationStatement, WhileStatement}
-import org.eclipse.jface.text.IDocument
+import org.eclipse.jface.text.{Document, IDocument}
 import org.eclipse.text.edits.TextEdit
+import org.apache.commons.io.FileUtils
 
 object test1 extends App {
     val file = new File("/Users/sachinmb/project_cs474/src/main/scala/AddTwoNumbers.java")
@@ -177,14 +178,14 @@ object test1 extends App {
             mi.getInvoc.forEach{meth: MethodInvocation =>
               if(result.getLineNumber(meth.getStartPosition) == lineNumber && sn.getIdentifier.equals(meth.getName.toString)) {
                   c -= 1
-                  loop.break
+
               }
             }
         }
       }
 
       if(c > 0) {
-          var template: String = "TemplateClass.instrum(\"" + result.getLineNumber(state.getStartPosition) + "\""
+          var template: String = "template.instrum(\"" + result.getLineNumber(state.getStartPosition) + "\""
           val clas: String = state.getClass.getName
           if(clas == "org.eclipse.jdt.core.dom.VariableDeclarationStatement") {
               template = template + ", \"Variable Declaration\""
@@ -209,7 +210,7 @@ object test1 extends App {
           while(state2 != "org.eclipse.jdt.core.dom.MethodDeclaration") {
               if(state2.equals("org.eclipse.jdt.core.dom.TypeDeclaration")) {
                   check = 1
-                  loop.break
+
               }
               state1 = state1.getParent
               state2 = state1.getClass.getName
@@ -228,12 +229,12 @@ object test1 extends App {
                     mi.getInvoc.forEach{meth: MethodInvocation =>
                         if(result.getLineNumber(meth.getStartPosition) == lineNumber && sn.getIdentifier.equals(meth.getName.toString)) {
                             count = 1
-                            loop.break
+
                         }
                     }
 
                     if(count == 0) {
-                        template = template + ", \"" + td.getName + "." + md.getName + "()." + sn.getIdentifier + ": \"," + sn.getIdentifier + ".toString()"
+                        template = template + ", \"" + td.getName + "." + md.getName + "()." + sn.getIdentifier + ": \"," + sn.getIdentifier
                     }
                 }
               }
@@ -247,23 +248,24 @@ object test1 extends App {
                       mi.getInvoc.forEach{meth: MethodInvocation =>
                           if(result.getLineNumber(meth.getStartPosition) == lineNumber && sn.getIdentifier.equals(meth.getName.toString)) {
                               count = 1
-                              loop.break
+
                           }
                       }
 
                       if(count == 0) {
-                          template = template + ", \"" + td.getClass.getName + "." + sn.getIdentifier + ".toString()"
+                          template = template + ", \"" + td.getClass.getName + "." + sn.getIdentifier
                       }
                   }
               }
           }
 
           template = template + ")"
-          println(template)
+          //println(template)
           val text: TextElement = result.getAST.newTextElement
-          text.getText
+          text.setText(template)
 
           val list1: ListRewrite = rewriter.getListRewrite(state.getParent, Block.STATEMENTS_PROPERTY)
+          //println(clas)
           if(clas.equals("org.eclipse.jdt.core.dom.IfStatement") || clas.equals("org.eclipse.jdt.core.dom.ForStatement") || clas.equals("org.eclipse.jdt.core.dom.WhileStatement") || clas.equals("org.eclipse.jdt.core.dom.SwitchStatement")) {
               list1.insertBefore(text, state, null)
           }
@@ -273,10 +275,10 @@ object test1 extends App {
       }
     }
 
-    val doc: IDocument = file.asInstanceOf[IDocument]
+    val doc: IDocument = new Document(FileUtils.readFileToString(new File(file.getAbsolutePath), "UTF-8"))
     val edits: TextEdit = rewriter.rewriteAST(doc, null)
     edits.apply(doc)
     val getValue: String = doc.get
     println(doc.get)
-    //println(all)
+    //FileUtils.writeStringToFile(new File("/Users/sachinmb/project_cs474/src/main/scala/new.java"), getValue, "UTF-8")
 }
